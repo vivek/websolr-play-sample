@@ -50,14 +50,8 @@ Run and Deploy on CloudBees RUN@cloud platform
  
 $ play bees:app:deploy
  
- For details on CloudBees Play framework support see, http://www.playframework.org/modules/cloudbees-0.2.2/home
- 
- 
-
-
-
  For more info...
  ----------------
- Websolr:
- Apache Solr:
- Play:
+ Websolr: https://websolr.com/
+ Apache Solr: http://wiki.apache.org/solr/Solrj
+ Play: http://www.playframework.org/modules/cloudbees-0.2.2/home
