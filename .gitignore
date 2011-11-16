@@ -12,4 +12,5 @@ conf/application.conf
 tmp/*
 out/*
 lib/*
+modules/*
 *~
