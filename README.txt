@@ -16,7 +16,7 @@ Run and Deploy on CloudBees RUN@cloud platform
  3. CloudBees account, free signup at https://grandcentral.cloudbees.com/account/signup
  4. Websolr index
     4.1 Signup to websolr subscription https://grandcentral.cloudbees.com/subscriptions/websolr
-    4.2 Create index resource, https://grandcentral.beescloud.com/resources?service_name=websolr
+    4.2 Create index resource, https://grandcentral.cloudbees.com/resources?service_name=websolr
 
  Test in local environment
  -------------------------
@@ -31,7 +31,7 @@ Run and Deploy on CloudBees RUN@cloud platform
      books.websolr.url=...
 
     Enter websolr server URL. Click on 'Show config' on    
-    https://grandcentral.beescloud.com/resources?service_name=websolr. 
+    https://grandcentral.cloudbees.com/resources?service_name=websolr. 
 
      #CloudBees specific info - needed to deploy at RUN@cloud
      bees.api.key=...
