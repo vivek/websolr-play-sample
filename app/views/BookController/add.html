@@ -1,0 +1,15 @@
+#{extends 'main.html' /}
+
+#{set title:'Add a Book' /}
+
+
+<div id="content">
+#{form @create(), enctype:'multipart/form-data'}
+   <label>Title</label>:<input type="text" name="book.title"><br/>
+   <label>Author</label>:<input type="text" name="book.author"><br/>
+   <label>Publisher</label>:<input type="text" name="book.publisher"><br/>
+   <label>ISBN</label>:<input type="text" name="book.isbn"><br/>
+   <input type="submit" name="submit" value="Add">
+#{/form}
+</content>
+

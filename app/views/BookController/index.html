@@ -1,0 +1,42 @@
+#{extends 'main.html' /}
+
+#{set title:'Add a Book' /}
+
+%{
+    if(books.isEmpty()){
+
+}%
+        <h3>No books found, please #{a @BookController.add()}add#{/a} a new book.</h3>
+%{
+
+    }else{
+
+}%
+
+<div id="content">
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publisher</th>
+            <th>ISBN</th>
+        </tr>
+        #{list items:books, as:'book' }
+        <tr>
+            <td>${book.title}</td>
+            <td>${book.author}</td>
+            <td>${book.publisher}</td>
+            <td>${book.isbn}</td>
+            </tr>
+        #{/list}
+        
+    </table>
+</div>
+
+<br/>
+<div>#{a @BookController.add()}Add New Book#{/a}</div>
+<div>#{a @BookController.search()}Search#{/a}</div>
+<div>#{a @BookController.resetIndex()}Reset Search Index#{/a}</div>
+%{
+    }
+}%

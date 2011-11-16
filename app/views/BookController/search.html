@@ -1,0 +1,15 @@
+#{extends 'main.html' /}
+
+#{set title:'Add a Book' /}
+
+
+<div id="content">
+#{form @doSearch(), enctype:'multipart/form-data'}
+    <label>Title</label>:<input type="text" name="title">
+   <input type="submit" name="submit" value="Search">
+#{/form}
+</div>
+<br/>
+<div>
+    <i>Enter partial or complete title above and click Search.</i>
+</div>

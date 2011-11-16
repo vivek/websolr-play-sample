@@ -1,0 +1,40 @@
+#{extends 'main.html' /}
+
+#{set title:'Search result...' /}
+
+%{
+    if(books.isEmpty()){
+
+}%
+        <h3>No books found.</h3>
+%{
+
+    }else{
+
+}%
+
+<div id="content">
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publisher</th>
+            <th>ISBN</th>
+        </tr>
+        #{list items:books, as:'book' }
+        <tr>
+            <td>${book.title}</td>
+            <td>${book.author}</td>
+            <td>${book.publisher}</td>
+            <td>${book.isbn}</td>
+            </tr>
+        #{/list}
+
+    </table>
+</div>
+
+%{
+        }
+}%
+<div>#{a @BookController.search()}Another Search#{/a}</div>
+<div>#{a @BookController.index()}All Books#{/a}</div>
